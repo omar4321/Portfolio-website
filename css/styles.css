@@ -133,6 +133,39 @@ h1,
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: italic;
 }
+.resume-btn {
+  width: 150px;
+  height: 40px;
+  overflow: hidden;
+}
+.resume-btn a {
+  text-decoration: none;
+}
+
+.resume-btn a span {
+  position: relative;
+  visibility: hidden;
+  width: 1.5rem;
+}
+
+.resume-btn a span::after {
+  content: '/21D3';
+  font-size: 1.5rem;
+  position: absolute;
+  padding-left: 10px;
+  animation: down 1s linear infinite;
+}
+
+@keyframes down {
+  from {
+    top: 10px;
+    opacity: 0;
+  }
+  to {
+    top: 10px;
+    opacity: 1;
+  }
+}
 h1,
 .h1 {
   font-size: calc(1.725rem + 5.7vw);
